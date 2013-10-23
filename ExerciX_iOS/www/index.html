@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>ExerciX</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+            <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+                
+                <script src="js/jquery.js"></script>
+                <script src="js/typeahead.js"></script>
+                
+                 
+
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+                </head>
+    <body>
+        
+        <script>
+
+         if(!localStorage["db-loaded"]){
+                        window.location = "launch.html";
+                    }
+                       var requests = window.localStorage.getItem('requestSolution');
+                       if(!requests){requests=[];}
+                       else{requests = JSON.parse(requests)}
+
+                       var flags = window.localStorage.getItem('flags');
+                       if(!flags){flags=[];}
+                       else{flags = JSON.parse(flags)}
+
+
+                       var viewcount =  window.localStorage.getItem('viewcount');
+                       if(!viewcount){viewcount=[];}
+                       else{viewcount = JSON.parse(viewcount)}
+
+                              
+                    var ua = navigator.userAgent;
+                    var uaindex = ua.indexOf( 'OS ' );
+                    var userOSver = ua.substr( uaindex + 3, 3 ).replace( '_', '.' );
+                    
+                
+                var OS = "iOS ver " + userOSver;
+                var date = new Date().getTime();
+
+
+        if(!localStorage["mail"]){var mail = "no-info"}else{var mail = localStorage["mail"]}
+        if(!localStorage["nomprepa"]){var nomprepa = "no-info"}else{var nomprepa = localStorage["nomprepa"]}
+        if(!localStorage["zipcode"]){var zipcode = "no-info"}else{var zipcode = localStorage["zipcode"]}
+        if(!localStorage["filiere"]){var filiere = "no-info"}else{var filiere = localStorage["filiere"]}
+            $.ajax( { url: "https://mongolab.com/api/1/databases/exercix/collections/exercix?apiKey=_gQZ4WEb4pS9yzz7EPk1eWqdq8mvj2US",
+                   data: JSON.stringify({
+                                        "_id"        : localStorage["userid"],
+                                        "mail"       : mail,
+                                        "nomprepa"   : nomprepa,
+                                        "zipcode"    : zipcode,
+                                        "filiere"    : filiere,
+                                        "data"       : {"viewcounts" : viewcount, "flags" : flags, "requests" : requests},
+                                        "OS"         : OS,
+                                        "lastupdate" : date,
+                                        "appversion" : "1.3"} ),
+                   type: "POST", 
+                   contentType: "application/json"});
+            
+            
+            var cleanURL = function(str) {
+                str = str.replace(/^\s+|\s+$/g, ''); // trim
+                str = str.toLowerCase();
+                
+                // remove accents, swap ñ for n, etc
+                var from = "ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";
+                var to   = "aaaaaeeeeeiiiiooooouuuunc------";
+                for (var i=0, l=from.length ; i<l ; i++) {
+                    str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+                }
+                
+                str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+                .replace(/\s+/g, '-') // collapse whitespace and replace by -
+                .replace(/-+/g, '-'); // collapse dashes
+                
+                return str;
+            };
+            
+            function openChapter(chapter){
+                
+                window.location = 'chapter.html?key=' + cleanURL(chapter);
+            }
+            
+            
+            //////////////////////////////////// OPEN INDEX ///////////////////////////////////////////////////
+            
+            
+                
+                
+                
+                $(document).ready(function() {
+                                  
+                    if(!localStorage["db-updated"]){
+                        $('#db-update').show();
+                        $('#db-updated-nav').hide();
+                        $('#db-non-updated-nav').show();
+                    }
+                                  // Typeahead
+                                  $('input').typeahead([
+                                                        {
+                                                        name: 'algebre',
+                                                        local: ["Structure, arithmétique, complexes",
+                                                                "Polynômes",
+                                                                "Espaces vectoriels, matrices, déterminants",
+                                                                "Réduction",
+                                                                "Espace préhilbertiens, espaces euclidiens"],
+                                                        header: '<div class="search-cat">Algèbre</div>'
+                                                        },
+                                                        {
+                                                        name: 'analyse',
+                                                        local: ["Espaces normés et Topologie",
+                                                                "Fonctions d'une variable réelle",
+                                                                "Suites réelles ou complexes",
+                                                                "Intégration sur un intervalle quelconque",
+                                                                "Intégrales à paramètre",
+                                                                "Séries numériques",
+                                                                "Séries de fonctions",
+                                                                "Séries entières",
+                                                                "Séries de Fourier",
+                                                                "Equations différentielles",
+                                                                "Fonctions de plusieurs variables réelles"],
+                                                        header: '<div class="search-cat">Analyse</div>'
+                                                        },
+                                                        {
+                                                        name: 'geometrie',
+                                                        local: ["Géométrie du plan et de l'espace",
+                                                                "Courbes et surfaces"],
+                                                        header: '<div class="search-cat">Géométrie</div>'
+                                                        }
+                                                        ]);
+                                  
+                                  // Checks if the device is an iPhone, and scrolls to the input field if so.
+                                  $('input#search').click(function(){
+                                                          if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+                                                          $("html, body").delay(50).animate({ scrollTop: $('input#search').offset().top }, 300);
+                                                          }});
+                                  
+                                  // Search Results handler
+                                  $('input#search').keyup(function(){
+                                                          
+                                                          $('.tt-suggestion').click(function(){
+                                                                                    openChapter($(this).text())});
+                                                          var chapter = $('input#search').val();
+                                                          if (event.which == 13) {
+                                                          if(jQuery.inArray(chapter,cats[0][1]) + jQuery.inArray(chapter,cats[1][1]) + jQuery.inArray(chapter,cats[2][1]) > -3){
+                                                          openChapter(chapter);}// Pour vérifier que l'entrée est bien dans la DB.
+                                                          }
+                                                          });
+                                  
+                                  
+                                  $('.cat-item').click(function(){
+                                                       openChapter($(this).text())
+                                                       });
+                                  
+                                  });
+            
+            </script>
+
+          <a href="form.html" id="db-update" style="display : none;"><i class="icon-download-alt"></i><div>Obtenez gratuitement une trentaine d'exercices supplémentaires ! </div></a>
+        <h1>ExerciX</h1><input id="search" autocorrect="off" placeholder="Rechercher"><div id="cats-container"></div>
+            <div class='cat-title'>Algèbre</div>
+                <div class='cat-items-container'>
+                    <div class='cat-item'>Structure, arithmétique, complexes</div>
+                    <div class='cat-item'>Polynômes</div>
+                    <div class='cat-item'>Espaces vectoriels, matrices, determinants</div>
+                    <div class='cat-item'>Réduction</div>
+                    <div class='cat-item'>Espaces prehilbertiens, espaces euclidiens</div>
+                </div>
+            <div class='cat-title'>Analyse</div>
+                <div class='cat-items-container'>
+                    <div class='cat-item'>Espaces normés et Topologie</div>
+                    <div class='cat-item'>Fonctions d'une variable réelle</div>
+                    <div class='cat-item'>Suites réelles ou complexes</div>
+                    <div class='cat-item'>Intégration sur un intervalle quelconque</div>
+                    <div class='cat-item'>Intégrales à paramètre</div>
+                    <div class='cat-item'>Séries numériques</div>
+                    <div class='cat-item'>Séries de fonctions</div>
+                    <div class='cat-item'>Séries entières</div>
+                    <div class='cat-item'>Séries de Fourier</div>
+                    <div class='cat-item'>Equations différentielles</div>
+                    <div class='cat-item'>Fonctions de plusieurs variables réelles</div>
+                </div>
+            <div class='cat-title'>Géométrie</div>
+                <div class='cat-items-container'>
+                  <div class='cat-item'>Courbes et surfaces</div>
+                  <div class='cat-item'>Géométrie du plan et de l'espace</div>
+            </div>
+            
+            
+            
+            <div class="double-nav" id="db-updated-nav">
+                <a href="reload.html">Mettre à jour les exercices</a>
+                <a href='about.html'>La petite histoire de l'appli</a>
+            </div>
+
+            <div class="single-nav" id="db-non-updated-nav" style="display : none">
+                <a href='about.html'>La petite histoire de l'appli</a>
+            </div>
+
+            </body>
+</html>

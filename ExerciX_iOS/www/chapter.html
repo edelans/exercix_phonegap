@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cordova</title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="litegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery.couch.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/handlebars.js"></script>
+
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+            <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+                
+                
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+                
+                <script type="text/javascript" charset="utf-8">
+                    
+                    var cleanURL = function(str) {str = str.replace(/^\s+|\s+$/g, ''); str = str.toLowerCase(); var from = "ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;"; var to   = "aaaaaeeeeeiiiiooooouuuunc------"; for (var i=0, l=from.length ; i<l ; i++) {str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i)); } str = str.replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-'); return str; };
+                    function sortByKey(array, key) {return array.sort(function(a, b) {var x = a[key]; var y = b[key]; return ((x < y) ? -1 : ((x > y) ? 1 : 0)); }); }
+                    document.addEventListener("deviceready", onDeviceReady, false);
+                    
+                    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+                    function onDeviceReady() {
+                        // Now safe to use the PhoneGap API
+                        console.log("onDeviceReady() called");
+                        
+                        if (window.litegap) {
+                            window.litegap.getURL(function(err, url) {
+                                                  if (err) {
+                                                  console.log("error launching: " + err)
+                                                      } else {
+                                                      console.log("Couchbase Lite running at " + url)
+                                                      $.couch.urlPrefix = url;
+           
+                                                                          
+                                                  
+                                                  
+                                                  var datalist = [];
+                                                  var chapter = window.location.search.substring(5);
+
+              $.couch.db("exercix").view("design-doc/list-view", {success : function(data){
+                                      for(var i=0; i<data.rows.length; i++){
+                                      if(cleanURL(data.rows[i].key) == chapter){
+                                      var val = data.rows[i].value;
+                                      datalist.push({
+                                                    "chapter": val.chapter,
+                                                    "category": val.category,
+                                                    "question": val.question,
+                                                    "difficulty": val.difficulty,
+                                                    "number": val.number,
+                                                    "school": val.school,
+                                                    "id" : val._id
+                                                    });
+                                      
+                                      }}
+                                      sortByKey(datalist, "number");
+                                      console.log(datalist);
+                                         if(datalist.length != 0){
+                                      var data = {
+                                      "category": datalist[0]["category"],
+                                      "chapter": datalist[0]["chapter"],
+                                      "datalist": datalist
+                                      };
+                                      
+                                      var source   = $("#template-body").html();
+                                      var template = Handlebars.compile(source);
+                                      
+                                      $("#body-container").html(template(data));
+                                  //    $("body").css("opacity", 1);
+                                      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+                                         }
+                                         else{
+                                          $('body').html("Aie ! Petit problème avec la DB ! <a href='index.html'> Retourner au menu</a>");
+                                         }
+                                         
+                                         }});
+
+                                            
+
+                                                  
+                                                      
+                       
+                                                      
+                                 }
+                            });
+                        } else {
+                            console.log("LiteGap plugin not installed.")
+                        }
+                    }
+                    
+
+
+
+                    </script>
+                
+
+            
+            <script type="text/x-mathjax-config">
+                MathJax.Hub.Config({jax: ["input/TeX","output/SVG"],
+                                   tex2jax: {
+                                   inlineMath: [ ['$','$'], ["\\(","\\)"] ]},
+                                   messageStyle: "none"
+                                   });
+                </script>
+            <script type="text/javascript" src="js/mathjax/MathJax.js?config=TeX-AMS-MML_SVG"></script>
+            
+            
+
+                
+                </head>
+    <body>
+        
+                <div id="body-container">
+
+        <div id="loading-screen"><div id="inner"><i class="icon-spin icon-spinner"></i></div></div>
+
+                </div>
+
+<div id="template-body" style="display : none;">
+
+        <div id="MathJax-Spin"> <i class="icon-spinner icon-spin icon-2x"></i></div>
+        
+        <h1 class="title">{{category}}</h1>
+        <h2 class="subtitle">{{chapter}}</h2>
+        
+        <div id="filter-diff">
+            <a class="filter-diff-element" filter-diff="1"><i class="icon-star"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></a>
+            <a class="filter-diff-element" filter-diff="2"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></a>
+            <a class="filter-diff-element" filter-diff="3"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></a>
+            <a class="filter-diff-element">Toutes difficultés</a>
+        </div>
+        <div id="exos-container">
+            {{#datalist}}
+            
+            <a href="exo.html?id={{id}}">
+                <div class="exo-item" db_id="{{id}}" db_difficulty="{{difficulty}}">
+                    <div class="exo-item-source">
+                        #{{number}}, {{school}}, <span class="difficulty-container"><i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></span>
+                    </div>
+                    {{{question}}}
+                    
+                </div>
+            </a>
+            
+            {{/datalist}}
+        </div>
+        <div id="single-nav-container"><a class="single-nav" href="index.html">Retour au sommaire</a><div>
+                    </div>
+
+
+            <script>
+                
+                // Icône MathJax
+                MathJax.Hub.Queue(function(){
+                                  $('#MathJax-Spin').remove();
+                                  });
+                
+                
+                //Difficulty
+                $('.difficulty-container').each(function(){
+                                                var difficulty = $(this).parents('.exo-item').attr("db_difficulty");
+                                                $(this).children('i:lt(' + difficulty + ')').removeClass('icon-star-empty').addClass("icon-star");
+                                                });
+                            
+                
+                $(".filter-diff-element:last").addClass('active-filter');//"Toutes Difficultés" preselected.
+                
+                
+                $(".filter-diff-element").click(function () {
+                                                $(".filter-diff-element").removeClass('active-filter');
+                                                $(this).addClass('active-filter');
+                                                $(".exo-item").show();              
+                                                $(".exo-item[db_difficulty!='" + $(this).attr('filter-diff') + "']").hide();
+                                                if($(this).text()=="Toutes difficultés"){$(".exo-item").show();}      
+                                                });
+                </script>
+
+            
+            </body>
+    
+</html>
+
+

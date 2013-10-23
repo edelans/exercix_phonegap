@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ExerciX</title>
+    <meta charset="utf-8">
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="litegap.js"></script>
+    <script type="text/javascript" charset="utf-8" src="jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="jquery.couch.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/handlebars.js"></script>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+            
+            
+
+            
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+            
+            
+            
+            
+<script type="text/javascript" charset="utf-8">
+
+
+    var cleanURL=function(e){e=e.replace(/^\s+|\s+$/g,"");e=e.toLowerCase();var t="ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";var n="aaaaaeeeeeiiiiooooouuuunc------";for(var r=0,i=t.length;r<i;r++){e=e.replace(new RegExp(t.charAt(r),"g"),n.charAt(r))}e=e.replace(/[^a-z0-9 -]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-");return e}
+    
+    // Sauvegarde le document
+    function saveDocument( document ){
+        $.couch.db("exercix").saveDoc( document, {
+                    success: function( response ){console.log("Document Updated.");},
+                    error: function() {alert( "Cannot save document" );}
+                    })};
+    
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+    function onDeviceReady() {
+        // Now safe to use the PhoneGap API
+        console.log("onDeviceReady() called")
+        if (window.litegap) {
+            window.litegap.getURL(function(err, url) {
+                if (err) {
+                    console.log("error launching: " + err)
+                } else {
+                    console.log("Couchbase Lite running at " + url)
+                    $.couch.urlPrefix = url;
+                                  
+                                  
+                                  var id = window.location.search.substring(4);
+                                  $.couch.db("exercix").openDoc(id, {
+                                     success: function(data) {
+                                     console.log(data);
+                                     var data2 = {
+                                         "chapter": data.chapter,
+                                         "cleanChapter" : cleanURL(data.chapter),
+                                         "category": data.category,
+                                         "question" : data.question,
+                                         "solution" : data.solution,
+                                         "difficulty": data.difficulty,
+                                         "number": data.number,
+                                         "school": data.school,
+                                         "hint": data.hint,
+                                         "id" : data._id
+                                     };
+                                     var source   = $("#template-body").html();
+                                     var template = Handlebars.compile(source);
+                                     console.log(data2);
+                                     $("body").html(template(data2));
+                                 //    $("body").css("opacity", 1)
+                                    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        
+                                    
+                                     
+                                                                },
+                                     error: function(status) {
+                                     console.log(status);
+                                     }
+                                     });
+          
+                                  
+                                  
+                }
+            });
+        } else {
+            console.log("LiteGap plugin not installed.")
+        }
+    }
+
+</script>
+
+
+</head>
+    <body >
+
+            <div id="body-container">
+        <div id="loading-screen"><div id="inner"><i class="icon-spin icon-spinner"></i></div></div>
+
+
+            </div>
+
+    <div id="template-body" style="display : none;">
+
+        <div id="MathJax-Spin"> <i class="icon-spinner icon-spin icon-2x"></i></div>
+        <h1 class="title">#{{number}}, {{school}} </h1>
+
+        <h2 class="subtitle">{{category}}, {{chapter}}</h2>
+        
+        <div id="orange-stripe">
+	        <i class="icon-star-empty"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i>
+	        
+	        {{#taglist}}
+            <div id="tags-container">
+                <div class="tag">{{.}}</div>
+                
+            </div>
+	        {{/taglist}}
+        </div>
+        
+        
+        
+        <div id="question-solution-container">
+            <div id="question">
+                {{{question}}}
+            </div>
+            <div id="solution">
+                <h2>Correction</h2>
+                {{#if hint}}
+
+                <a id="show-hint" href="#"><div>Montrer un indice</div></a>
+                <div id="hint-text">{{{hint}}}</div>
+                {{/if}}
+                <a id="show-solution" href="#"><div>Montrer la correction</div></a>
+                
+                
+                
+                <div id="solution-text">{{{solution}}}
+                                            
+                    <a id="show-flag">
+Une erreur, une coquille, un manque de clarté ? <br>
+                        <div>
+			        	Prévenez-nous !<i class="icon-flag"></i></div></a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+        <div class="double-nav">
+            <a href="index.html">Retour au sommaire</a>
+            <a href='chapter.html?key={{cleanChapter}}'>Retour au chapitre</a>
+        </div>
+        
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({jax: ["input/TeX","output/SVG"],
+                               tex2jax: {
+                               inlineMath: [ ['$','$'], ["\\(","\\)"] ]},
+                               messageStyle: "none"
+                               });
+            </script>
+        <script type="text/javascript" src="js/mathjax/MathJax.js?config=TeX-AMS-MML_SVG"></script>
+    
+        
+        <script>
+            
+            //MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+            
+                               MathJax.Hub.Queue(function(){
+                                                 $('#MathJax-Spin').remove();
+                                                 });
+            
+			// Show/Hide solution Script : MathJax must load with its DOM elements displayed, so we lower the opacity to 0, wait for MathJax and then hide (eg. display : none)
+			// Montrer/Cacher la solution : MathJax doit charger avec ses éléments affichés (pas en display : none). Donc on descend l'opacité à 0, on attend MathJax puis on cache avec un display : none
+			$("#solution-text, #hint-text").css("opacity",0);
+			$("#missing").hide();
+			MathJax.Hub.Queue(function () {
+                              $("#solution-text, #hint-text").hide();
+                              $("#show-solution").click(function(e){
+                                                        e.preventDefault();
+                                                        $("#solution-text, #missing").css("opacity", 1).show();
+                                                        $("#show-solution").hide();
+                                                        });
+                              $("#show-hint").click(function(e){
+                                                        e.preventDefault();
+                                                        $("#hint-text").css("opacity", 1).show();
+                                                        $("#show-hint").hide();
+                                                        });
+                              });
+            
+            // Difficulty
+            // Difficulté : Remplit les icônes d'étoiles dans la barre orange.
+            $('#orange-stripe i:lt(' + {{difficulty}} + ')').removeClass('icon-star-empty').addClass("icon-star");
+            
+            
+            
+            $db = $.couch.db("exercix");
+            var id = "{{id}}";
+            
+            
+            var date = new Date().getTime();
+            
+            
+            // Flag Update
+            // Incrémente le compteur flag.
+
+                    $('#show-flag').click(function(){
+                        $(this).hide();
+                        $('#solution-text').append('<br><br><br><div id="flag"> <textarea id="input-flag" placeholder="Expliquez nous ce qui ne va pas."></textarea><br><div>Envoyer ! </div></div>');
+
+                        $('#flag div').not('.disabled').click(function(){
+                            var msg = $('#input-flag').val();
+                            sendFlag(msg);
+                            $('#input-flag').hide();
+                            $(this).text('Merci !');
+                            $('#flag div').addClass('disabled').unbind('click');
+                        });
+                    });
+
+                        function sendFlag(msg){
+                                 var flags = window.localStorage.getItem('flags');
+                                if(!flags){flags=[];}
+                                else{flags = JSON.parse(flags)}
+                                flags.push({'id' : id, 'date' : date, 'msg' : msg});
+                                 window.localStorage.setItem('flags', JSON.stringify(flags));
+                                                                 };
+
+            
+
+            // Viewcount Update
+            // Met à jour le compteur de vues, avec un TimeStamp
+                        
+                        var viewcount =  window.localStorage.getItem('viewcount');
+                        if(!viewcount){viewcount=[];}
+                        else{viewcount = JSON.parse(viewcount)}
+                        viewcount.push({'id' : id, 'date' : date});
+                        window.localStorage.setItem('viewcount', JSON.stringify(viewcount));
+
+            // Disable the form          
+            $('#mailto').not('.disabled').click(function (){requestSolution()});
+            
+
+            
+            
+            </script>
+    
+    
+        </div>
+    
+    </body>
+
+</html>

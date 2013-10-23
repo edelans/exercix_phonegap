@@ -1,0 +1,608 @@
+THello World
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Info.plist" "Hello World/Hello World-Info.plist"
+cPhaseScriptExecution "Copy www directory" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Script-304B58A110DAC018002A0835.sh"
+cCpResource "Hello World/config.xml" "build/Hello World.app/config.xml"
+cCpResource "Hello World/Resources/icons/icon-72.png" "build/Hello World.app/icon-72.png"
+cCpResource "Hello World/Resources/icons/icon.png" "build/Hello World.app/icon.png"
+cCpResource "Hello World/Resources/icons/icon@2x.png" "build/Hello World.app/icon@2x.png"
+cCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/en.lproj/Localizable.strings" "Hello World/Resources/en.lproj/Localizable.strings"
+cCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/es.lproj/Localizable.strings" "Hello World/Resources/es.lproj/Localizable.strings"
+cCompileXIB "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.xib"
+cCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/de.lproj/Localizable.strings" "Hello World/Resources/de.lproj/Localizable.strings"
+cCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/se.lproj/Localizable.strings" "Hello World/Resources/se.lproj/Localizable.strings"
+cCpResource "Hello World/Resources/splash/Default-Landscape@2x~ipad.png" "build/Hello World.app/Default-Landscape@2x~ipad.png"
+cCpResource "Hello World/Resources/splash/Default-Landscape~ipad.png" "build/Hello World.app/Default-Landscape~ipad.png"
+cCpResource "Hello World/Resources/splash/Default-Portrait@2x~ipad.png" "build/Hello World.app/Default-Portrait@2x~ipad.png"
+cCpResource "Hello World/Resources/splash/Default-Portrait~ipad.png" "build/Hello World.app/Default-Portrait~ipad.png"
+cCpResource "Hello World/Resources/splash/Default@2x~iphone.png" "build/Hello World.app/Default@2x~iphone.png"
+cCpResource "Hello World/Resources/splash/Default~iphone.png" "build/Hello World.app/Default~iphone.png"
+cCpResource "Hello World/Resources/splash/Default-568h@2x~iphone.png" "build/Hello World.app/Default-568h@2x~iphone.png"
+cCpResource "Hello World/Resources/icons/icon-72@2x.png" "build/Hello World.app/icon-72@2x.png"
+cProcessPCH "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.pth" "Hello World/Hello World-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.o" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.o" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.o" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World" normal i386
+cGenerateDSYMFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app.dSYM" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World"
+cTouch "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+c00000000504916AD0000000000000110
+t1346967213
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c0000000050FAC2C900000000001EAFC0
+t1358611145
+s2011072
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c0000000050FAC2C800000000000C0EF0
+t1358611144
+s790256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c0000000050FAC2C80000000000193640
+t1358611144
+s1652288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c0000000050FAC2C800000000000225D0
+t1358611144
+s140752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c0000000050FAC2C900000000003D2B80
+t1358611145
+s4008832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c0000000050FAC2C90000000000215D60
+t1358611145
+s2186592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000050FAC2C90000000000228FD0
+t1358611145
+s2265040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c0000000050FAC2CA000000000009C220
+t1358611146
+s639520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c0000000050FAC2CA0000000000085620
+t1358611146
+s546336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000050FAC2CC00000000003DCEF0
+t1358611148
+s4050672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c0000000050FAC2CE00000000002CFBE0
+t1358611150
+s2948064
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c0000000050FAC2CF00000000002C6C10
+t1358611151
+s2911248
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c0000000050FAC2D000000000000BCB50
+t1358611152
+s772944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c0000000050FAC2D00000000000030EB0
+t1358611152
+s200368
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c0000000050FAC2D100000000001D57A0
+t1358611153
+s1922976
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c0000000050FAC2D2000000000006CC50
+t1358611154
+s445520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000050FAC2D40000000000AB3D60
+t1358611156
+s11222368
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/AppDelegate.m
+c0000000051EFDB1C00000000000013AD
+t1374673692
+s5037
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.m
+c0000000051EFDB1C000000000000126C
+t1374673692
+s4716
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.xib
+c0000000051EFDB1C0000000000001759
+t1374673692
+s5977
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Hello World-Prefix.pch
+c0000000051EFDB1C00000000000003C7
+t1374673692
+s967
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/de.lproj/Localizable.strings
+c0000000051EFDB1C00000000000004BF
+t1374673692
+s1215
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/en.lproj/Localizable.strings
+c0000000051EFDB1C00000000000004AA
+t1374673692
+s1194
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/es.lproj/Localizable.strings
+c0000000051EFDB1C00000000000004B7
+t1374673692
+s1207
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon-72.png
+c0000000051EFDB1C0000000000001350
+t1374673692
+s4944
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon-72@2x.png
+c0000000051EFDB1C0000000000002DBA
+t1374673692
+s11706
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon.png
+c0000000051EFDB1C0000000000000F3E
+t1374673692
+s3902
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon@2x.png
+c0000000051EFDB1C0000000000001EBD
+t1374673692
+s7869
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/se.lproj/Localizable.strings
+c0000000051EFDB1C00000000000004AB
+t1374673692
+s1195
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-568h@2x~iphone.png
+c0000000051EFDB1C00000000000085B1
+t1374673692
+s34225
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Landscape@2x~ipad.png
+c0000000051EFDB1C0000000000012DF4
+t1374673692
+s77300
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Landscape~ipad.png
+c0000000051EFDB1C0000000000008877
+t1374673692
+s34935
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Portrait@2x~ipad.png
+c0000000051EFDB1C0000000000012B02
+t1374673692
+s76546
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Portrait~ipad.png
+c0000000051EFDB1C00000000000085E6
+t1374673692
+s34278
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default@2x~iphone.png
+c0000000051EFDB1C0000000000007323
+t1374673692
+s29475
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default~iphone.png
+c0000000051EFDB1C000000000000289A
+t1374673692
+s10394
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/config.xml
+c0000000051EFDB32000000000000059C
+t1374673714
+s1436
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/main.m
+c0000000051EFDB1C000000000000045D
+t1374673692
+s1117
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app.dSYM
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Default-568h@2x~iphone.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Default-Landscape@2x~ipad.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Default-Landscape~ipad.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Default-Portrait@2x~ipad.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Default-Portrait~ipad.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Default@2x~iphone.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Default~iphone.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Info.plist
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/MainViewController.nib
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/PkgInfo
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/config.xml
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/de.lproj/Localizable.strings
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/en.lproj/Localizable.strings
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/es.lproj/Localizable.strings
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/icon-72.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/icon-72@2x.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/icon.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/icon@2x.png
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/se.lproj/Localizable.strings
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/Hello World.LinkFileList
+c0000000051EFDB3B00000000000001D1
+t1374673723
+s465
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.o
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Script-304B58A110DAC018002A0835.sh
+c0000000051EFDB3B000000000000051A
+t1374673723
+s1306
+
+N/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/libCordova.a
+c0000000051EFDB3B00000000001186B8
+t1374673723
+s1148600
+
+N/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.pth
+t2
+s0
+
+NHello World/Hello World-Info.plist
+c0000000051EFDB320000000000000740
+t1374673714
+s1856
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6d8ffabb12a0b741^4a40fcbb12a0b741^---0#1#0#--18"Check dependencies36"51008AF4-F4BA-49B5-931A-407C71618618-
+
+CCompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.o" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396366535.335900
+e396366535.415870
+r1
+xCompileC
+xbuild/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.o
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/AppDelegate.mad6d56c712a0b741^de756ac712a0b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Classes/AppDelegate.m0000000000000000^3967"CompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.o" "Hello World/Classes/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-generated-files.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-own-target-headers.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-all-target-headers.hmap" -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-project-headers.hmap" -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/usr/local/lib/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/UninstalledProducts/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources/i386" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources" -F/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build -include "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch" -MMD -MT dependencies -MF "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.d" --serialize-diagnostics "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.dia" -c "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/AppDelegate.m" -o "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/AppDelegate.o"36"C64BA9A5-0A58-4DBD-86B7-5CF3D1E6BF27-
+
+CCompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.o" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396366535.335879
+e396366535.408597
+r1
+xCompileC
+xbuild/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.o
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.m095156c712a0b741^919868c712a0b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Classes/MainViewController.m0000000000000000^4009"CompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.o" "Hello World/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-generated-files.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-own-target-headers.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-all-target-headers.hmap" -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-project-headers.hmap" -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/usr/local/lib/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/UninstalledProducts/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources/i386" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources" -F/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build -include "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch" -MMD -MT dependencies -MF "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.d" --serialize-diagnostics "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.dia" -c "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.m" -o "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/MainViewController.o"36"526A041A-CB3A-47AE-A2F9-4A7245C4C4D5-
+
+CCompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.o" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396366535.335949
+e396366535.366275
+r1
+xCompileC
+xbuild/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.o
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/main.m596956c712a0b741^1fd85dc712a0b741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/main.m0000000000000000^3909"CompileC "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.o" "Hello World/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-generated-files.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-own-target-headers.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-all-target-headers.hmap" -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-project-headers.hmap" -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/usr/local/lib/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/UninstalledProducts/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources/i386" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources" -F/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build -include "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch" -MMD -MT dependencies -MF "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.d" --serialize-diagnostics "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.dia" -c "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/main.m" -o "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/main.o"36"81D08B07-7FC4-4B82-9C91-EFF985CF53BC-
+
+CCompileXIB "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.xib"
+s396366524.448026
+e396366534.993492
+r1
+xCompileXIB
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.xib
+o2013-07-24 15:48:54.475 Interface Builder Cocoa Touch Tool[2031:f07] CFPreferences: user home directory at file://localhost/Users/jd/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compiling /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.xib64cb72bc12a0b741^365afec612a0b741^-234"2013-07-24 15:48:54.475 Interface Builder Cocoa Touch Tool[2031:f07] CFPreferences: user home directory at file://localhost/Users/jd/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Classes/MainViewController.xib0000000000000000^1090"CompileXIB "Hello World/Classes/MainViewController.xib"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/MainViewController.nib" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Classes/MainViewController.xib" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"0D94BAE9-F1B8-4777-A001-36478DA54E15-
+
+CCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/de.lproj/Localizable.strings" "Hello World/Resources/de.lproj/Localizable.strings"
+s396366524.448052
+e396366524.451798
+r1
+xCopyStringsFile
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/de.lproj/Localizable.strings
+xHello World/Resources/de.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy Hello World/Resources/de.lproj/Localizable.stringscdca72bc12a0b741^2aa973bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Resources/de.lproj/Localizable.strings0000000000000000^742"CopyStringsFile "build/Hello World.app/de.lproj/Localizable.strings" "Hello World/Resources/de.lproj/Localizable.strings"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/de.lproj" -- "Hello World/Resources/de.lproj/Localizable.strings"36"E14A2623-2BC8-44CE-BC1A-9FC69EC069A6-
+
+CCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/en.lproj/Localizable.strings" "Hello World/Resources/en.lproj/Localizable.strings"
+s396366524.445738
+e396366524.450405
+r1
+xCopyStringsFile
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/en.lproj/Localizable.strings
+xHello World/Resources/en.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy Hello World/Resources/en.lproj/Localizable.strings214072bc12a0b741^f04d73bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Resources/en.lproj/Localizable.strings0000000000000000^742"CopyStringsFile "build/Hello World.app/en.lproj/Localizable.strings" "Hello World/Resources/en.lproj/Localizable.strings"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/en.lproj" -- "Hello World/Resources/en.lproj/Localizable.strings"36"5C93FB4D-C770-4017-9D87-C0E6BD360B9D-
+
+CCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/es.lproj/Localizable.strings" "Hello World/Resources/es.lproj/Localizable.strings"
+s396366524.445743
+e396366524.449312
+r1
+xCopyStringsFile
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/es.lproj/Localizable.strings
+xHello World/Resources/es.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy Hello World/Resources/es.lproj/Localizable.strings3e3d72bc12a0b741^ea0573bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Resources/es.lproj/Localizable.strings0000000000000000^742"CopyStringsFile "build/Hello World.app/es.lproj/Localizable.strings" "Hello World/Resources/es.lproj/Localizable.strings"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/es.lproj" -- "Hello World/Resources/es.lproj/Localizable.strings"36"B0389EEA-D00A-4633-ADEF-AA9C6575B5C2-
+
+CCopyStringsFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/se.lproj/Localizable.strings" "Hello World/Resources/se.lproj/Localizable.strings"
+s396366524.450508
+e396366524.513458
+r1
+xCopyStringsFile
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/se.lproj/Localizable.strings
+xHello World/Resources/se.lproj/Localizable.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy Hello World/Resources/se.lproj/Localizable.strings9f7373bc12a0b741^1d7283bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Resources/se.lproj/Localizable.strings0000000000000000^742"CopyStringsFile "build/Hello World.app/se.lproj/Localizable.strings" "Hello World/Resources/se.lproj/Localizable.strings"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/se.lproj" -- "Hello World/Resources/se.lproj/Localizable.strings"36"DC4B6B65-D67A-4DA8-BCAA-EB14A170B377-
+
+CCpResource "Hello World/Resources/icons/icon-72.png" "build/Hello World.app/icon-72.png"
+s396366524.441593
+e396366524.445555
+r1
+xCpResource
+xHello World/Resources/icons/icon-72.png
+xbuild/Hello World.app/icon-72.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Copy build/Hello World.app/icon-72.png373471bc12a0b741^7b1072bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/icon-72.png000000000080d041^765"CpResource "Hello World/Resources/icons/icon-72.png" "build/Hello World.app/icon-72.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon-72.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"C64A7328-0ADA-47D0-A706-1B12E89587FD-
+
+CCpResource "Hello World/Resources/icons/icon-72@2x.png" "build/Hello World.app/icon-72@2x.png"
+s396366524.465348
+e396366524.467687
+r1
+xCpResource
+xHello World/Resources/icons/icon-72@2x.png
+xbuild/Hello World.app/icon-72@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy build/Hello World.app/icon-72@2x.pngd53c77bc12a0b741^45ba77bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/icon-72@2x.png000000000080d041^774"CpResource "Hello World/Resources/icons/icon-72@2x.png" "build/Hello World.app/icon-72@2x.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon-72@2x.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"ADB1E1D7-9154-4CB0-8988-7B754F0AAED5-
+
+CCpResource "Hello World/Resources/icons/icon.png" "build/Hello World.app/icon.png"
+s396366524.441612
+e396366524.444476
+r1
+xCpResource
+xHello World/Resources/icons/icon.png
+xbuild/Hello World.app/icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Copy build/Hello World.app/icon.png2b3371bc12a0b741^0cc971bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/icon.png000000000080d041^756"CpResource "Hello World/Resources/icons/icon.png" "build/Hello World.app/icon.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"B767EAB2-2FCB-47A1-87DE-7A5C50068AFE-
+
+CCpResource "Hello World/Resources/icons/icon@2x.png" "build/Hello World.app/icon@2x.png"
+s396366524.441766
+e396366524.447878
+r1
+xCpResource
+xHello World/Resources/icons/icon@2x.png
+xbuild/Hello World.app/icon@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Copy build/Hello World.app/icon@2x.pngb43a71bc12a0b741^1ea972bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/icon@2x.png000000000080d041^765"CpResource "Hello World/Resources/icons/icon@2x.png" "build/Hello World.app/icon@2x.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/icons/icon@2x.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"FBA6211F-B859-45A8-B8AF-ED01D0E06DC1-
+
+CCpResource "Hello World/Resources/splash/Default-568h@2x~iphone.png" "build/Hello World.app/Default-568h@2x~iphone.png"
+s396366524.463655
+e396366524.465841
+r1
+xCpResource
+xHello World/Resources/splash/Default-568h@2x~iphone.png
+xbuild/Hello World.app/Default-568h@2x~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Hello World.app/Default-568h@2x~iphone.pngd1c976bc12a0b741^7d4177bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/Default-568h@2x~iphone.png000000000080d041^812"CpResource "Hello World/Resources/splash/Default-568h@2x~iphone.png" "build/Hello World.app/Default-568h@2x~iphone.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-568h@2x~iphone.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"EAA3CF14-7818-4183-87AC-3CDD5C3B016F-
+
+CCpResource "Hello World/Resources/splash/Default-Landscape@2x~ipad.png" "build/Hello World.app/Default-Landscape@2x~ipad.png"
+s396366524.450538
+e396366524.455096
+r1
+xCpResource
+xHello World/Resources/splash/Default-Landscape@2x~ipad.png
+xbuild/Hello World.app/Default-Landscape@2x~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Hello World.app/Default-Landscape@2x~ipad.pngc66e73bc12a0b741^dc7f74bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/Default-Landscape@2x~ipad.png000000000080d041^821"CpResource "Hello World/Resources/splash/Default-Landscape@2x~ipad.png" "build/Hello World.app/Default-Landscape@2x~ipad.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Landscape@2x~ipad.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"F7FFD1BF-B54F-4C1C-8C9C-A716AFEC1CA5-
+
+CCpResource "Hello World/Resources/splash/Default-Landscape~ipad.png" "build/Hello World.app/Default-Landscape~ipad.png"
+s396366524.453159
+e396366524.457872
+r1
+xCpResource
+xHello World/Resources/splash/Default-Landscape~ipad.png
+xbuild/Hello World.app/Default-Landscape~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Hello World.app/Default-Landscape~ipad.png212374bc12a0b741^263875bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/Default-Landscape~ipad.png000000000080d041^812"CpResource "Hello World/Resources/splash/Default-Landscape~ipad.png" "build/Hello World.app/Default-Landscape~ipad.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Landscape~ipad.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"5C48B127-3129-4457-B183-F3CB7D5C8914-
+
+CCpResource "Hello World/Resources/splash/Default-Portrait@2x~ipad.png" "build/Hello World.app/Default-Portrait@2x~ipad.png"
+s396366524.456844
+e396366524.459082
+r1
+xCpResource
+xHello World/Resources/splash/Default-Portrait@2x~ipad.png
+xbuild/Hello World.app/Default-Portrait@2x~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/Hello World.app/Default-Portrait@2x~ipad.pngcb1275bc12a0b741^668675bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/Default-Portrait@2x~ipad.png000000000080d041^818"CpResource "Hello World/Resources/splash/Default-Portrait@2x~ipad.png" "build/Hello World.app/Default-Portrait@2x~ipad.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Portrait@2x~ipad.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"FD18BF18-970A-4617-AEA1-5C1848E40344-
+
+CCpResource "Hello World/Resources/splash/Default-Portrait~ipad.png" "build/Hello World.app/Default-Portrait~ipad.png"
+s396366524.459096
+e396366524.461072
+r1
+xCpResource
+xHello World/Resources/splash/Default-Portrait~ipad.png
+xbuild/Hello World.app/Default-Portrait~ipad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/Hello World.app/Default-Portrait~ipad.png1f9e75bc12a0b741^e10876bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/Default-Portrait~ipad.png000000000080d041^809"CpResource "Hello World/Resources/splash/Default-Portrait~ipad.png" "build/Hello World.app/Default-Portrait~ipad.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default-Portrait~ipad.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"940C0770-4E9A-46D9-AFE8-FA31B9263D4B-
+
+CCpResource "Hello World/Resources/splash/Default@2x~iphone.png" "build/Hello World.app/Default@2x~iphone.png"
+s396366524.460356
+e396366524.462382
+r1
+xCpResource
+xHello World/Resources/splash/Default@2x~iphone.png
+xbuild/Hello World.app/Default@2x~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/Hello World.app/Default@2x~iphone.pngffea75bc12a0b741^9a5e76bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/Default@2x~iphone.png000000000080d041^797"CpResource "Hello World/Resources/splash/Default@2x~iphone.png" "build/Hello World.app/Default@2x~iphone.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default@2x~iphone.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"594FA265-07C3-4430-93FE-38FE7D6BC6CC-
+
+CCpResource "Hello World/Resources/splash/Default~iphone.png" "build/Hello World.app/Default~iphone.png"
+s396366524.462237
+e396366524.464219
+r1
+xCpResource
+xHello World/Resources/splash/Default~iphone.png
+xbuild/Hello World.app/Default~iphone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Copy build/Hello World.app/Default~iphone.png266d76bc12a0b741^62d776bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/Default~iphone.png000000000080d041^788"CpResource "Hello World/Resources/splash/Default~iphone.png" "build/Hello World.app/Default~iphone.png"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Resources/splash/Default~iphone.png" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"CFB2D6FD-0FAC-4BF7-BE92-080CEA21D483-
+
+CCpResource "Hello World/config.xml" "build/Hello World.app/config.xml"
+s396366524.441584
+e396366524.446807
+r1
+xCpResource
+xHello World/config.xml
+xbuild/Hello World.app/config.xml
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy build/Hello World.app/config.xmla03371bc12a0b741^f26172bc12a0b741^---0#0#0#-19%DVTDocumentLocation2@107"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app/config.xml000000000080d041^730"CpResource "Hello World/config.xml" "build/Hello World.app/config.xml"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/config.xml" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"4E908623-26BC-4A14-96E0-E96667E3C589-
+
+CGenerateDSYMFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app.dSYM" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World"
+s396366536.327238
+e396366536.480972
+r1
+xGenerateDSYMFile
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app.dSYM
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Generating /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app.dSYMeee853c812a0b741^b4217bc812a0b741^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello%20World.app.dSYM000000000080d041^748"GenerateDSYMFile "build/Hello World.app.dSYM" "build/Hello World.app/Hello World"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World" -o "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app.dSYM"36"D167F516-6552-42A1-8E18-8DDDCFE6A2A3-
+
+CLd "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World" normal i386
+s396366535.423232
+e396366536.320229
+r1
+xLd
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Link /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World91986cc712a0b741^22fa51c812a0b741^---0#0#0#--1969"Ld "build/Hello World.app/Hello World" normal i386    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build -F/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build -filelist "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/Hello World.LinkFileList" -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -framework CoreLocation -framework ImageIO -framework OpenAL -framework AssetsLibrary /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/libCordova.a -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -weak_framework AVFoundation -framework CFNetwork -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -weak_framework CoreMedia -framework CoreLocation -o "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Hello World"36"F2F08653-97A2-475D-8B87-655F38F24AEA-
+
+CPhaseScriptExecution "Copy www directory" "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Script-304B58A110DAC018002A0835.sh"
+s396366524.001936
+e396366524.433464
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.387s
+ouser	0m0.104s
+osys	0m0.128s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'103d01bc12a0b741^cff46ebc12a0b741^-42"real	0m0.387suser	0m0.104ssys	0m0.128s3(21%IDEActivityLogMessage2@14"real	0m0.387s-396366524#1#14#-0#-----2@14"user	0m0.104s-396366524#15#14#-0#-----2@13"sys	0m0.128s-396366524#29#13#-0#-----0#0#0#--21427"PhaseScriptExecution "Copy www directory" "build/Hello World.build/Debug-iphonesimulator/Hello World.build/Script-304B58A110DAC018002A0835.sh"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER jd    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv BUILD_ROOT /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv CACHE_ROOT /var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv CONFIGURATION_TEMP_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator"    setenv CONTENTS_FOLDER_PATH "Hello World.app"    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH "Hello World.app/English.lproj/Documentation"    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT "/tmp/Hello World.dst"    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME "Hello World.app.dSYM"    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH "Hello World.app/Executables"    setenv EXECUTABLE_FOLDER_PATH "Hello World.app"    setenv EXECUTABLE_NAME "Hello World"    setenv EXECUTABLE_PATH "Hello World.app/Hello World"    setenv FILE_LIST "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH "Hello World.app/Frameworks"    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME "Hello World.app"    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER "Hello World/Hello World-Prefix.pch"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/include\" \"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/usr/local/lib/include\" \"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/UninstalledProducts/include\" \"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE "Hello World/Hello World-Info.plist"    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH "Hello World.app/Info.plist"    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH "Hello World.app/English.lproj/InfoPlist.strings"    setenv INSTALL_DIR "/tmp/Hello World.dst/Applications"    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER jd    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT "/tmp/Hello World.dst"    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH "Hello World.app/Java"    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-LinkMap-normal-i386.txt"    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal/i386/Hello World.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH "Hello World.app/English.lproj"    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12C60    setenv MAC_OS_X_VERSION_ACTUAL 1082    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0802    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Objects-normal"    setenv OBJROOT /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load \"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/libCordova.a\" -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH "Hello World.app/pbdevelopment.plist"    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/PkgInfo"    setenv PKGINFO_PATH "Hello World.app/PkgInfo"    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 10A403    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 60000    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH "Hello World.app/PlugIns"    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH "Hello World.app/PrivateHeaders"    setenv PRODUCT_NAME "Hello World"    setenv PRODUCT_SETTINGS_PATH "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Hello World-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT "Hello World"    setenv PROJECT_DERIVED_FILE_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/DerivedSources"    setenv PROJECT_DIR /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PROJECT_FILE_PATH "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World.xcodeproj"    setenv PROJECT_NAME "Hello World"    setenv PROJECT_TEMP_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build"    setenv PUBLIC_HEADERS_FOLDER_PATH "Hello World.app/Headers"    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH "Hello World.app/Scripts"    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk    setenv SDK_NAME iphonesimulator6.0    setenv SDK_PRODUCT_BUILD_VERSION 10A403    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH "Hello World.app/SharedFrameworks"    setenv SHARED_PRECOMPS_DIR /var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH "Hello World.app/SharedSupport"    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv SRCROOT /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME "Hello World"    setenv TARGET_BUILD_DIR /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv TARGET_NAME "Hello World"    setenv TARGET_TEMP_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build"    setenv TEMP_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build"    setenv TEMP_FILES_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build"    setenv TEMP_FILE_DIR "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build"    setenv TEMP_ROOT /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH "Hello World.app"    setenv UNSTRIPPED_PRODUCT NO    setenv USER jd    setenv USER_APPS_DIR /Users/jd/Applications    setenv USER_LIBRARY_DIR /Users/jd/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH "Hello World.app/version.plist"    setenv VERSION_INFO_BUILDER jd    setenv VERSION_INFO_FILE "Hello World_vers.c"    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Hello World  PROJECT:Hello World-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME "Hello World.app"    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4G2008a    setenv XCODE_VERSION_ACTUAL 0452    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0450    setenv YACC yacc    /bin/sh -c "\"/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Script-304B58A110DAC018002A0835.sh\""36"A130F870-8742-40BD-8F9B-6F4375087D10-
+
+CProcessInfoPlistFile "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Info.plist" "Hello World/Hello World-Info.plist"
+s396366523.990387
+e396366523.993598
+r1
+xProcessInfoPlistFile
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Info.plist
+xHello World/Hello World-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Process Hello World/Hello World-Info.plist1fa2fdbb12a0b741^c85bfebb12a0b741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Hello%20World-Info.plist0000000000000000^801"ProcessInfoPlistFile "build/Hello World.app/Info.plist" "Hello World/Hello World-Info.plist"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    builtin-infoPlistUtility "Hello World/Hello World-Info.plist" -genpkginfo "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app/Info.plist"36"7CAF3495-E667-4245-9DD1-3616E1F469D7-
+
+CProcessPCH "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.pth" "Hello World/Hello World-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396366535.001621
+e396366535.328599
+r1
+xProcessPCH
+x/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.pth
+xHello World/Hello World-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile Hello World/Hello World-Prefix.pchca8b00c712a0b741^5c1d54c712a0b741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello%20World/Hello%20World-Prefix.pch0000000000000000^3911"ProcessPCH "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.pth" "Hello World/Hello World-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=5.0 -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-generated-files.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-own-target-headers.hmap" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-all-target-headers.hmap" -iquote "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/Hello World-project-headers.hmap" -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/usr/local/lib/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/UninstalledProducts/include -I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources/i386" "-I/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.build/Debug-iphonesimulator/Hello World.build/DerivedSources" -F/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build --serialize-diagnostics "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.dia" -c "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/Hello World/Hello World-Prefix.pch" -o "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.pth" -MMD -MT dependencies -MF "/var/folders/t1/kqcyj6qx6dqcztflt9lt2s7m0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Hello World-Prefix-dfewgytzxxojahaprflhjuqatcoe/Hello World-Prefix.pch.d"36"BAF05034-8596-436A-A1FD-A7004634060C-
+
+CTouch "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"
+s396366536.489161
+e396366536.522212
+r1
+xTouch
+x/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Touch /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app884c7dc812a0b741^8eaf85c812a0b741^---0#0#0#--517"Touch "build/Hello World.app"    cd /Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools"    /usr/bin/touch -c "/Users/jd/Desktop/cordova-italy/HelloWorld/platforms/ios/build/Hello World.app"36"3D14065E-B550-416A-BDA7-8A362476C606-
+
