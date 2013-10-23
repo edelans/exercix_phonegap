@@ -1,0 +1,692 @@
+/*ExerciX 1.3 CSS (using LESS) copyright 2013*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////  Fonts  //////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'LM'; /* LaTeX font : Latin Modern*/
+    src: url('fonts/lmroman10-regular-webfont.eot');
+    src: url('fonts/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lmroman10-regular-webfont.woff') format('woff'),
+         url('fonts/lmroman10-regular-webfont.ttf') format('truetype'),
+         url('fonts/lmroman10-regular-webfont.svg#lm_roman_10regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LMC'; /* LaTeX font with CAPS*/
+    src: url('fonts/lmromancaps10-regular-webfont.eot');
+    src: url('fonts/lmromancaps10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lmromancaps10-regular-webfont.woff') format('woff'),
+         url('fonts/lmromancaps10-regular-webfont.ttf') format('truetype'),
+         url('fonts/lmromancaps10-regular-webfont.svg#lm_roman_caps_10regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'LMI'; /* LaTeX font italic*/
+    src: url('fonts/lmroman10-italic-webfont.eot');
+    src: url('fonts/lmroman10-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lmroman10-italic-webfont.woff') format('woff'),
+         url('fonts/lmroman10-italic-webfont.ttf') format('truetype'),
+         url('fonts/lmroman10-italic-webfont.svg#lm_roman_10italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Colors /////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@orange : #f14400;
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  General  /////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body{margin:0;}
+
+h1,h2{text-align: center;font-weight: normal;}
+h1{font-size: 60px;}
+h2{font-size: 40px;}
+ 
+i{font-family: LMI; font-style: normal;}
+
+.title{margin-bottom: 0;}
+.subtitle{margin-top: 0;}
+	
+*{
+	font-family : 'LM';
+	font-weight: normal; 
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    /* Border-box évite de compter le padding à l'extérieur.*/
+    }
+
+.double-nav{
+	text-align: center;
+	a{
+		width: 20%;
+		margin: 20px;
+		padding: 10px;
+		text-decoration: none;
+	//	color: darken(@orange, 30%);
+		color: @orange;
+		display: inline-block;
+		background: lighten(@orange,40%);
+		text-align: center;
+		i{
+			font-size: 30px;
+			color: white;
+		}
+		&:hover{
+			background: lighten(@orange,20%);
+		}
+	}
+}
+
+
+.single-nav{
+	width: 20%;
+	margin: 20px;
+	padding: 10px;
+	text-decoration: none;
+	//color: darken(@orange, 30%);
+	color: @orange;
+	display: inline-block;
+	background: lighten(@orange,44%);
+	text-align: center;
+	a{text-decoration: none; color: inherit;}
+	&:hover{
+		background: lighten(@orange,43%);
+		}
+}	
+
+#single-nav-container{
+	text-align: center;
+}
+
+#loading-screen{
+	position: fixed;
+    display: table;
+    width: 100%;
+    height: 100%; /* Height can be anything */
+		#inner {
+		    display: table-cell;
+		    vertical-align: middle;
+		    text-align: center;
+		    font-size: 40px;	
+		}
+}
+
+
+#MathJax-Spin{
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 200;
+}
+/*
+.MathJax_SVG, .MathJax, .MathJax_Display, .MathJax_SVG_Display{
+	span{
+		max-width: 100%;
+		svg{
+			max-width : 100%
+		}
+	}
+}*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Index  /////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.cat-title{ /* Ex : Algebre ...*/
+	font-size: 40px;
+	text-align: center;
+	//background: @orange;
+	color : @orange;
+	margin : 0;
+	padding: 7px 0;	
+}
+
+.cat-items-container{
+	padding: 30px 10%;
+}
+
+.cat-item{ /* Le chapter, ex : Polynômes*/
+	font-size: 28px;
+	margin: 5px;
+	padding: 5px;
+	color: white;
+	//border: lighten(@orange, 20%) 2px solid;
+	background: lighten(@orange,20%);
+	text-align: center;
+	&:hover{
+		background: lighten(@orange, 10%);
+	}
+	
+}
+#db-update{
+	display: block;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	background: #f44400;
+	font-size: 21px;
+	padding: 12px;
+	i{font-size: 30px}
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Search  /////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+input#search, .tt-hint{ /* La barre de recherche, et la barre de suggestion située en dessous.*/
+	width: 100% ;
+	padding: 10px 20px;
+	border: 0 none;
+	font-size: 30px;
+	-webkit-transition: all 0.5s;	
+    outline: 0 none;
+    background: @orange;
+    border-radius: 0;
+    opacity: 1;
+	&:hover, &:focus{color : white;}
+	&::-webkit-input-placeholder{
+		color: rgba(255,255,255,0.4);
+		text-align: center;
+	}
+}
+
+input#search:focus{
+	//background: rgba(255,203,148,0.36) !important; /* La transparence est là pour ne pas masquer la suggestion (.tt-hint). */
+}
+
+.twitter-typeahead{width: 100%;} /*Englobe les deux input*/
+
+.tt-dropdown-menu{ /* Le dropdown Menu des suggestions...*/
+	background: white;
+	width: 100%;
+	padding: 20px;
+	border-bottom: darken(@orange, 10%) 3px solid;
+	background: lighten(@orange,50%);
+}
+
+.search-cat{ /*La catégorie dans la fenêtre des résultats. Ex : Algebre*/
+	font-size: 30px;
+	color: @orange;
+}
+
+.tt-suggestion{ /*La proposition (l'item)*/
+	
+
+	font-size: 20px;
+	background: lighten(@orange, 30%);
+	margin: 1px;
+	padding : 4px;
+	p{
+		margin : 0;
+	}}
+
+
+
+.tt-is-under-cursor{color: darken(@orange, 10%);}
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Chapter  /////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#exos-container{
+	padding: 0 15%;
+	
+	a{
+		text-decoration: none;
+		/* Altèrne les couleurs pour les énoncés */
+		&:nth-child(4n) .exo-item{background: lighten(@orange, 10%);}
+		&:nth-child(1) .exo-item, &:nth-child(5) .exo-item, &:nth-child(9) .exo-item{background: darken(@orange, 10%);}
+		.exo-item, &:nth-child(2) .exo-item, &:nth-child(6) .exo-item, &:nth-child(10) .exo-item{background: lighten(@orange, 40%); color: darken(@orange, 20%);
+            .MathJax_SVG svg > g, .MathJax_SVG_Display svg > g{
+                fill: darken(@orange, 20%);
+                stroke: darken(@orange, 20%);
+                max-width: 290px;
+            }
+           // .MathJax, .MathJax_Display{font-size : 67% !important}
+            .exo-tag{border: 1px solid darken(@orange, 20%)};}
+		&:nth-child(3) .exo-item, &:nth-child(7) .exo-item, &:nth-child(11) .exo-item{background: darken(@orange, 25%);}
+		
+		.exo-item{ /* Le bloc de l'énoncé */
+			max-width : 100%;
+			margin-bottom: 20px;
+			padding: 10px;
+			color: white;
+			.MathJax_SVG svg > g, .MathJax_SVG_Display svg > g{
+                fill: white;
+                stroke: white;
+                max-width: 290px;
+            }
+		//	.MathJax, .MathJax_Display{font-size : 67% !important}
+			text-decoration: none;
+			.exo-item-source{font-size: 20px;}
+			.exo-tags-container{margin-top: 10px;}
+			.exo-tag{font-size: 13px; display: inline-block; margin: 2px; padding : 2px 4px ;border: 1px solid white; line-height: 14px;}
+		}
+	}
+}
+	
+	
+#missing{
+	text-align: center;
+	font-size: 17px;
+	
+}
+
+
+
+#filter-school, #filter-diff{
+	text-align: center;
+	color: darken(@orange, 30%);
+	font-size: 20px;
+	margin: 20px 0;
+	a{
+		margin: 10px;
+		padding: 10px;
+		background: lighten(@orange,48%);
+		&.active-filter{background: lighten(@orange,30%)}
+	}
+}
+
+#filter-diff{margin: 30px 0;}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Single Exo  /////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#question-solution-container{
+	display: table;
+	font-size: 18px;
+}
+/*
+.MathJax, .MathJax_Display{
+	font-size: 67% !important;
+}*/
+
+.MathJax{
+	font-weight: bold;
+}
+
+#question{
+	width : 30%;
+	display: table-cell; 
+	background: lighten(@orange, 50%);
+	padding: 20px;
+	color: @orange;
+    
+    .MathJax_SVG svg > g, .MathJax_SVG_Display svg > g{
+        fill: @orange;
+        stroke: @orange;
+        max-width: 290px;
+    }
+}
+
+ 
+ 
+#solution{
+	width: 50%;
+	display: table-cell;
+	padding: 20px;
+	color: darken(@orange, 32%);
+        .MathJax_SVG svg > g, .MathJax_SVG_Display svg > g{
+        fill: darken(@orange, 32%);
+        stroke: darken(@orange, 32%);
+        max-width: 290px;
+    }
+	 a{
+		 text-decoration: none;
+		 color: inherit;
+	 }
+}
+
+
+#orange-stripe{
+	background: @orange;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
+
+#tags-container{
+	display: inline-block;
+	.tag{
+		font-size: 13px;
+		display: inline-block;
+		margin: 2px;
+		padding : 2px 4px ;
+		border: 1px solid white;
+		line-height: 14px;
+	}
+}
+	#hint-text{
+		font-family: LMI;
+		margin-bottom: 20px;
+		color: @orange;
+		.MathJax_SVG svg > g, .MathJax_SVG_Display svg > g{
+        fill: @orange;
+        stroke: @orange;
+    }
+	}
+	
+
+
+
+.paragraph-number{
+		display: inline-block;
+		padding: 5px;
+		border: 1px solid;
+		border-radius: 100px;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 16px;
+}
+
+#show-flag {
+	text-decoration: none;
+	color: black !important;
+	font-size: 15px;
+	display: block;
+	margin: 20px;
+	text-align: center;
+}
+
+#show-solution, #mailto, #show-hint, #show-flag, #flag{
+	width: 100%;
+	text-align: center;
+	display: block;
+	div{
+		display: inline-block;
+		padding: 10px;
+		background: darken(@orange,10%);
+		color: white !important;
+		text-align: center;
+		}
+}
+
+
+#mailto{
+	display: inline;
+    div{background: lighten(@orange,10%);}
+}
+    .disabled div{background: #eee; color: black !important;}
+
+
+#show-hint{
+    div{
+    	background: lighten(@orange,40%);
+    	color : @orange !important;
+    	margin-bottom :10px
+	}
+}
+#flag{
+    .disabled{background: #eee; color: black !important;}
+	#input-flag{
+		border-radius: 0;
+		width: 80%;
+	min-height: 200px;
+	border: 1px solid #f44400;
+	font-size: 20px;
+}}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Launch   /////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#launch-page{
+	background: @orange;
+	text-align: center;
+	color: white;
+	#launch-form{
+		background: lighten(@orange,15%);
+		position: relative;
+		display: inline-block;
+		text-align: left;
+		padding: 20px;
+		margin: 20px;
+		max-width: 500px;
+		p{
+text-align:justify;		
+font-size: 20px;}
+
+		#launch-fb{
+				font-size: 27px;
+			}
+		
+		input{
+			width: 100%;
+			font-size: 23px;
+			margin-bottom : 10px;
+			background: lighten(@orange, 47%);
+			border: 0 none;
+			padding: 10px;
+			border-radius: 0px;
+			-webkit-appearance: none;
+				
+		}
+		div#select{
+			width: 100%;
+			margin-bottom : 10px;
+			background: lighten(@orange, 47%);
+			padding: 10px;
+			i{color: @orange}
+				select{
+					background: transparent;
+					width: 90%;
+					font-size: 18px;
+					border-radius: 0px;
+					-webkit-appearance: none;
+					border: 0 none;
+
+				}
+	}
+
+		input[type='radio']{
+			display: inline;
+			opacity: 0;
+			height: 1px;
+			width: 1px;
+			padding: 0;
+			margin: 0;
+			& + label{
+				width : 99%;
+				padding: 10px;
+				display: inline-block;
+				font-size: 25px;
+				background: lighten(@orange, 43%);
+				color: @orange;
+				&:before{
+					content : "\f10c";
+					font-family: FontAwesome;
+					margin-right: 10px;
+				}
+			}
+
+			&:checked + label{
+				background: lighten(@orange,28%);
+				&:before{
+					content : "\f111";
+				}
+			}
+			&:focus + label:before{
+				color : lighten(@orange,15%);
+			}
+
+		}
+
+		input[type="submit"]{
+			color: @orange;
+		}
+
+		.invalid{
+			background: darken(@orange, 10%)
+		}
+		.invalid-radio + label{
+			background: darken(@orange, 10%) !important;
+			color: white !important;
+		}
+	}
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Reload  /////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#loading{
+	text-align: center;
+	padding: 15px;
+	#loading-bar{
+		background: lighten(@orange,30%);
+		width : 100%;
+		height: 30px;
+		div{
+			background: @orange;
+			height: 100%;
+			width: 0;
+		}
+	}
+	#loading-status{
+		font-size: 40px;
+	}
+	#no-internet, #db-loaded{
+		display: none;
+
+	}
+
+	i{
+			color: @orange;
+			font-size: 50px;
+			height: 0 !important;
+			display: inline-block;
+			overflow: hidden;
+
+			&.icon-show{
+				height: auto !important;
+			}
+		}
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  About   /////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#about{
+	padding: 20px;
+	font-size: 20px;
+	color: darken(@orange,30%)
+}
+
+
+#about-title{
+	color: @orange
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////  Mobile  /////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width : 600px){
+
+h1{font-size: 40px;}
+h2{font-size: 30px;}
+
+//Index
+.cat-item{max-width: 100%; font-size: 20px;}
+.cat-items-container {
+padding: 20px 10px;
+}
+.cat-title{
+	font-size: 35px
+}
+
+//Search
+.tt-suggestion{
+	font-size: 20px;
+	background: lighten(@orange, 30%);
+	margin: 1px;
+	padding : 4px;
+	p:before{content :''}
+	
+}
+.search-cat{font-size: 20px;}
+
+//Chapter
+.exo-item{
+	max-width : 100% !important;
+	width: 100%;
+	position: relative !important;
+	top: 0 !important;
+	margin-bottom: 5px !important;
+}
+#exos-container {
+	padding: 0;
+	height: auto !important;
+	a{
+		width: 100%;
+		display: inline;
+	}
+}
+#filter-school  .filter-school-element{
+	margin: 2px !important;
+	font-size: 15px;
+}
+#filter-diff .filter-diff-element{
+	font-size: 12px;
+	margin: 2px !important;
+}
+
+
+// Single-exo
+#question-solution-container{
+	display: block;
+}
+#question, #solution{
+	display: block;
+	width: 100%;
+}
+.double-nav a{
+	width: 48%;
+	margin: 0 0 10px 0; 
+	padding : 15px;	
+}
+
+.single-nav{
+	width: 100%;
+	margin: 0;
+}
+
+#input-flag{
+	width: 100% !important;
+}
+
+// Launch
+
+#launch-form{
+	margin: 0 !important;
+}
+
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>ExerciX</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+            <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+                
+                <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+                <script type="text/javascript" charset="utf-8" src="litegap.js"></script>
+                <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+                
+                
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+                </head>
+    <body>
+        
+        <script>
+            
+
+            // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+
+                function onDeviceReady(){
+                // Now safe to use the PhoneGap API
+                console.log("onDeviceReady() called");
+                //   alert("onDeviceReady() called");
+
+
+                    $.ajax({
+                        url: "http://exercix.net/connection.txt",
+                        cache: false,
+                        success: function() { 
+
+                   // Success = internet connection !
+                          
+                          if (window.litegap) {
+                              window.litegap.getURL(function(err, url) {
+                            if (err) {
+                            console.log("error launching: " + err)
+                            alert("Aie ! Problème avec la DB ! Envoyez un mail à contact@exercix.net");
+                            } else {
+                            console.log("Couchbase Lite running at " + url);
+                            //   alert('0');
+                            $('#loading-status').html("10%");
+                            $('#loading-bar div').width("10%");
+
+
+                                function delDB(){
+                                    $.ajax({
+                                        type:"DELETE",
+                                        url:url+"/exercix", 
+                                        contentType: "application/json",
+                                        success:function(){
+                                            console.log("+1");
+
+                                           $('#loading-status').html("20%");
+                                           $('#loading-bar div').width("20%");
+                                            createDB();
+                                        },
+                                        error:function(data){
+                                            if(data.status == 404){
+                                                console.log("404, +1");
+                                               $('#loading-status').html("20%");
+                                               $('#loading-bar div').width("20%");
+                                                createDB();
+                                            }
+                                            else{
+                                            console.log('-1');
+                                            console.log(JSON.stringify(data));
+                                            delDB()
+                                            }
+                                        }
+                                    });
+                                }
+                                function createDB(){
+                                    $.ajax({
+                                        type:"PUT",
+                                        url:url+"/exercix", 
+                                        contentType: "application/json",
+                                        success:function(){
+                                            console.log("+2");
+                                           $('#loading-status').html("30%");
+                                           $('#loading-bar div').width("30%");
+                                            saveDesign();
+                                        },
+                                        error:function(data){
+                                            console.log('-2');
+                                            console.log(JSON.stringify(data));
+                                            createDB()
+                                        }
+                                    });
+                                }
+
+                                function saveDesign(){
+                                    $.ajax({
+                                        type:"PUT",
+                                        url:url+"/exercix/_design/design-doc", 
+                                        contentType: "application/json",
+                                        dataType: "json",
+                                        data : '{"views" : {"list-view" : {"map" : "function(doc){ if(doc.chapter){emit(doc.chapter, doc)}}"}}}',
+                                        success:function(){
+                                            console.log("+3");
+                                            $('#loading-status').html("40%");
+                                            $('#loading-bar div').width("40%");
+                                            getJSONFile();
+                                        },
+                                        error:function(data){
+                                            if(data.status==409){
+                                                $('#loading-status').html("40%");
+                                                $('#loading-bar div').width("40%");
+                                                getJSONFile();
+                                            }
+                                            else{
+                                                if(data.status==400){
+                                                    console.log('-3');
+                                                    console.log(JSON.stringify(data));
+                                                    saveDesign();
+                                                }
+                                                else{
+                                                console.log('-3');
+                                                console.log(JSON.stringify(data));
+                                           saveDesign();
+                                                }
+                                            }
+                                        }
+                                    });
+                                }
+
+
+                                function getJSONFile(){
+                                $.ajax({
+                                    dataType: "json",
+                                    url: "http://exercix.net/data.json",
+                                    success : function(data){
+                                    console.log("+4");
+                                    $('#loading-status').html("75%");
+                                    $('#loading-bar div').width("75%");
+                                    saveDocs(data);
+                                    },
+                                    error : function(data) {
+                                        console.log('-4');
+                                        console.log(JSON.stringify(data));
+                                       getJSONFile();
+                                    }
+                                });
+                                }
+
+                                function saveDocs(data){
+                                        $.ajax({
+                                        type:"POST",
+                                        url:url+"/exercix/_bulk_docs", 
+                                        contentType: "application/json",
+                                        dataType: "json",
+                                        data : '{"docs" : ' + JSON.stringify(data) + '}',
+                                        success:function(){
+                                            console.log("+5");
+                                            $('#loading-status').html("100%");
+                                            $('#loading-bar div').width("100%");
+                                            console.log('Docs from data.json saved in local database (CouchbaseLite)');
+                                            $('#db-loaded').show();
+                                            $('.icon-ok').addClass('icon-show');
+                                        },
+                                        error:function(data){
+                                            if(data.status==400){
+                                                console.log('-5');
+                                                console.log(JSON.stringify(data));
+                                                getJSONFile();
+                                            }
+                                            else{
+                                                console.log('-5');
+                                                console.log(JSON.stringify(data));
+                                               getJSONFile();
+                                            }
+                                        }
+                                    });
+                                }
+
+
+
+                            delDB();
+             
+           
+                  }
+                  });
+                } else {
+                    console.log("LiteGap plugin not installed.");
+                    alert("LiteGap plugin not installed.");
+                }
+
+             
+
+            
+            
+
+
+                            },
+                         error: function(){
+                            $('#no-internet').show();
+                            $('.icon-remove').addClass('icon-show');
+                                         } 
+                        });
+
+}
+            
+            </script>
+        
+        
+        
+      <h1>ExerciX</h1>
+        
+      <div id="loading">
+        <div id="loading-bar"><div></div></div>
+
+        <div id="loading-status"></div>
+        
+        <i class="icon-ok"></i><br>
+        <div id="db-loaded">Ok, banque d'exercices mise à jour !</div>
+
+        <i class="icon-remove"></i><br>
+        <div id="no-internet">Aie ! Pas de connexion Internet ou alors nos serveurs sont en panne ! <br> (Mais ils sont rarement en panne, alors vérifiez votre connexion...)</div>
+      </div>
+            <div class="double-nav">
+                <a href="reload.html">Recommencer la mise à jour</a>
+                <a href='index.html'>Retour aux exercices</a>
+            </div>
+    
+    </body>
+</html>
