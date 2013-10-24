@@ -182,19 +182,29 @@ Une erreur, une coquille, un manque de clarté ? <br>
         
         <script>
             
-            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+             MathJax.Hub.Queue(function(){
+                  //Fix ). Ne pas poser de questions...
+                  $(".MathJax").find("span").each(function(){
+                      if($(this).html()==')'){
+                        size = $(this).css('font-family');
+                        $(this).after('<span style="font-family :' + size +'">) <a style="display : none">_</a></span>')
+                        $(this).remove();
+                      }
 
-                               MathJax.Hub.Queue(function(){
-                                $(".MathJax").find("span").each(function(){
-                                      if($(this).html()==')'){
-                                        size = $(this).css('font-family');
-                                        $(this).after('<span style="font-family :' + size +'">) <a style="display : none">_</a></span>')
-                                        $(this).remove();
-                                      }
-                                    });
+                      //Fix A.
+                      if($(this).html()=='A'){
+                          var family = $(this).css('font-family');
+                          var style = $(this).css('font-style');
+                          var padding = $(this).css('padding'); 
+                          $(this).after('<span style="font-family :' + family +'; font-style : ' + style +'; padding : ' + padding +'">A <a style="display : none">_</a></span>')
+                          $(this).remove();
+                        }
+                    });
 
-                                                 $('#MathJax-Spin').remove();
-                                                 });
+                                  // Icône MathJax
+
+                                  $('#MathJax-Spin').remove();
+                                  });
             
 			// Show/Hide solution Script : MathJax must load with its DOM elements displayed, so we lower the opacity to 0, wait for MathJax and then hide (eg. display : none)
 			// Montrer/Cacher la solution : MathJax doit charger avec ses éléments affichés (pas en display : none). Donc on descend l'opacité à 0, on attend MathJax puis on cache avec un display : none
