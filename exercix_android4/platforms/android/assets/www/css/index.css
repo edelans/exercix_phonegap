@@ -243,6 +243,7 @@ input#search::-webkit-input-placeholder,
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #exos-container {
   padding: 0 15%;
+  max-width: 100%;
 }
 #exos-container a {
   text-decoration: none;
@@ -425,7 +426,7 @@ input#search::-webkit-input-placeholder,
   color: black !important;
   font-size: 15px;
   display: block;
-  margin: 20px;
+  margin: 10px;
   text-align: center;
 }
 #show-solution,
@@ -667,6 +668,7 @@ input#search::-webkit-input-placeholder,
   }
   #question-solution-container {
     display: block;
+    max-width: 100%;
   }
   #question,
   #solution {

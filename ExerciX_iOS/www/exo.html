@@ -240,6 +240,18 @@ Une erreur, une coquille, un manque de clarté ? <br>
             $('#mailto').not('.disabled').click(function (){requestSolution()});
             
 
+
+            // Modular !
+            $(".detail").each(function(){
+                $(this).hide();
+                $(this).before("<span class='ellipsis'><i class='icon-ellipsis-horizontal'></i> <br></span>");
+            });
+    
+            $(".ellipsis").click(function() {
+                $(this).next(".detail").show('fast');
+                $(this).hide();
+            });
+
             
             
             </script>

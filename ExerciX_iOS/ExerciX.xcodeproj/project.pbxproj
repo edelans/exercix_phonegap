@@ -50,7 +50,6 @@
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		5E46428664A74E15B61F511A /* CouchbaseLiteListener.a in Sources */ = {isa = PBXBuildFile; fileRef = 13049FCB2AE4498E8CEBD84A /* CouchbaseLiteListener.a */; };
-		696D76D417C2DF3C006F196A /* LocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 696D76D317C2DF3C006F196A /* LocalNotification.m */; };
 		696E11B317C134230079E606 /* apple-touch-icon-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 696E11B217C134230079E606 /* apple-touch-icon-iphone.png */; };
 		696E11B517C1342A0079E606 /* apple-touch-icon-iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 696E11B417C1342A0079E606 /* apple-touch-icon-iphone4.png */; };
 		696E11B717C134330079E606 /* apple-touch-icon-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 696E11B617C134330079E606 /* apple-touch-icon-ipad.png */; };
@@ -153,8 +152,6 @@
 		5C100CCC7495426796120043 /* CBLReplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBLReplication.h; path = com.couchbase.litegap/CBLReplication.h; sourceTree = "<group>"; };
 		5F65592496324CA688EEB49A /* CBL_Pusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBL_Pusher.h; path = com.couchbase.litegap/CBL_Pusher.h; sourceTree = "<group>"; };
 		6520AB361E7A483B9864ADE1 /* libicucore.dylib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		696D76D217C2DF3C006F196A /* LocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalNotification.h; path = "../../../../../Downloads/Phonegap-LocalNotification-master/cordova2.3+/LocalNotification.h"; sourceTree = "<group>"; };
-		696D76D317C2DF3C006F196A /* LocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalNotification.m; path = "../../../../../Downloads/Phonegap-LocalNotification-master/cordova2.3+/LocalNotification.m"; sourceTree = "<group>"; };
 		696E11B217C134230079E606 /* apple-touch-icon-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-iphone.png"; sourceTree = "<group>"; };
 		696E11B417C1342A0079E606 /* apple-touch-icon-iphone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-iphone4.png"; sourceTree = "<group>"; };
 		696E11B617C134330079E606 /* apple-touch-icon-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-ipad.png"; sourceTree = "<group>"; };
@@ -374,8 +371,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				696D76D217C2DF3C006F196A /* LocalNotification.h */,
-				696D76D317C2DF3C006F196A /* LocalNotification.m */,
 				36DACCBC90244443B4E85307 /* LiteGap.m */,
 				E1715B483D34494194DA6125 /* CouchbaseLite.a */,
 				13049FCB2AE4498E8CEBD84A /* CouchbaseLiteListener.a */,
@@ -603,7 +598,6 @@
 				5E46428664A74E15B61F511A /* CouchbaseLiteListener.a in Sources */,
 				B792E53C20A14C959D8A9EA6 /* JavaScriptCore.a in Sources */,
 				C85337A587224871B1C40D7E /* libCBLJSViewCompiler.a in Sources */,
-				696D76D417C2DF3C006F196A /* LocalNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +652,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Patrick DAHAN (926LN3246A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Patrick DAHAN (926LN3246A)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -691,8 +685,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = ExerciX;
-				PROVISIONING_PROFILE = "AC102975-5415-4358-9B05-0412F18DC392";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AC102975-5415-4358-9B05-0412F18DC392";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "286BC756-7F31-4C02-911C-0BD28E298FCD";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -703,7 +697,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Patrick DAHAN (926LN3246A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Patrick DAHAN (926LN3246A)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -734,8 +728,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = ExerciX;
-				PROVISIONING_PROFILE = "AC102975-5415-4358-9B05-0412F18DC392";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AC102975-5415-4358-9B05-0412F18DC392";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "286BC756-7F31-4C02-911C-0BD28E298FCD";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
