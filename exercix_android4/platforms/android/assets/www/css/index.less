@@ -402,16 +402,30 @@ input#search:focus{
 		line-height: 16px;
 }
 
-#show-flag {
+#show-flag, #flag-ok{
 	text-decoration: none;
+}
+
+
+#flag-div{
+	text-align: center;
 	color: black !important;
 	font-size: 15px;
 	display: block;
-	margin: 10px;
-	text-align: center;
+	background : lighten(@orange, 30%);
+	padding: 5px;
+	margin: 10px auto;
 }
 
-#show-solution, #mailto, #show-hint, #show-flag, #flag{
+#show-flag, #flag-ok{
+		display: inline-block;
+		padding: 10px;
+		background: lighten(@orange,10%);
+		color: white !important;
+		text-align: center;
+}
+
+#show-solution, #mailto, #show-hint, #flag{
 	width: 100%;
 	text-align: center;
 	display: block;
@@ -438,7 +452,8 @@ input#search:focus{
     	color : @orange !important;
     	margin-bottom :10px
 	}
-}
+	}
+
 #flag{
     .disabled{background: #eee; color: black !important;}
 	#input-flag{
@@ -447,8 +462,54 @@ input#search:focus{
 	min-height: 200px;
 	border: 1px solid #f44400;
 	font-size: 20px;
-}}
+	}
+			input[type='radio']{
+			display: inline;
 
+			opacity: 0;
+			height: 1px;
+			width: 1px;
+			padding: 0;
+			margin: 0;
+			& + label{
+				width : 99%;
+				padding: 10px;
+				display: inline-block;
+				font-size: 15px;
+				text-align: left;
+				background: lighten(@orange, 43%);
+				color: @orange;
+				&:before{
+					content : "\f10c";
+					font-family: FontAwesome;
+					margin-right: 10px;
+				}
+			}
+
+			&:checked + label{
+				background: lighten(@orange,28%);
+				&:before{
+					content : "\f111";
+				}
+			}
+			&:focus + label:before{
+				color : lighten(@orange,15%);
+			}
+
+		}
+
+
+}
+
+.detail{
+	color: darken(@orange, 27%);
+}
+
+.ellipsis{
+	text-align: center;
+	color: darken(@orange, 10%);
+	padding: 10px;
+}
 
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

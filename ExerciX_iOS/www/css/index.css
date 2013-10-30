@@ -395,18 +395,30 @@ input#search::-webkit-input-placeholder,
   text-align: center;
   line-height: 16px;
 }
-#show-flag {
+#show-flag,
+#flag-ok {
   text-decoration: none;
+}
+#flag-div {
+  text-align: center;
   color: black !important;
   font-size: 15px;
   display: block;
-  margin: 20px;
+  background: #ffac8b;
+  padding: 5px;
+  margin: 10px auto;
+}
+#show-flag,
+#flag-ok {
+  display: inline-block;
+  padding: 10px;
+  background: #ff6325;
+  color: white !important;
   text-align: center;
 }
 #show-solution,
 #mailto,
 #show-hint,
-#show-flag,
 #flag {
   width: 100%;
   text-align: center;
@@ -415,7 +427,6 @@ input#search::-webkit-input-placeholder,
 #show-solution div,
 #mailto div,
 #show-hint div,
-#show-flag div,
 #flag div {
   display: inline-block;
   padding: 10px;
@@ -448,6 +459,37 @@ input#search::-webkit-input-placeholder,
   min-height: 200px;
   border: 1px solid #f44400;
   font-size: 20px;
+}
+#flag input[type='radio'] {
+  display: inline;
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+}
+#flag input[type='radio'] + label {
+  width: 99%;
+  padding: 10px;
+  display: inline-block;
+  font-size: 15px;
+  text-align: left;
+  background: #ffdbcd;
+  color: #f14400;
+}
+#flag input[type='radio'] + label:before {
+  content: "\f10c";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+#flag input[type='radio']:checked + label {
+  background: #ffa481;
+}
+#flag input[type='radio']:checked + label:before {
+  content: "\f111";
+}
+#flag input[type='radio']:focus + label:before {
+  color: #ff753f;
 }
 .detail {
   color: #671d00;

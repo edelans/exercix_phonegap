@@ -150,11 +150,16 @@
                 
                 
                 <div id="solution-text">{{{solution}}}
-                                            
-                    <a id="show-flag">
-Une erreur, une coquille, un manque de clarté ? <br>
-                        <div>
-			        	Prévenez-nous !<i class="icon-flag"></i></div></a>
+                                   
+                <div id="flag-div">  
+                Êtes vous satisfait de la correction? <br>
+
+                    <a id="flag-ok">
+                        Oui <i class="icon-ok"></i>
+                    </a>
+                      <a id="show-flag">
+                Non <i class="icon-flag"></i>
+                    </a>
                 </div>
                 
                 
@@ -241,26 +246,46 @@ Une erreur, une coquille, un manque de clarté ? <br>
             // Incrémente le compteur flag.
 
                     $('#show-flag').click(function(){
-                        $(this).hide();
-                        $('#solution-text').append('<br><br><br><div id="flag"> <textarea id="input-flag" placeholder="Expliquez nous ce qui ne va pas."></textarea><br><div>Envoyer ! </div></div>');
+                        $('#flag-div').html('<div id="flag"><input id="fil1" type="radio" name="option" required value="formulation" ><label for="fil1">Il y a une faute de langue (typo/orthographe)</label><input id="fil2" type="radio" name="option" required value="detailsneeded" ><label for="fil2">La correction est trop succinte</label><input id="fil3" type="radio" name="option" required value="other" ><label for="fil3">Autre</label><textarea id="input-flag" placeholder="Expliquez nous ce qui ne va pas."></textarea><br><div>Envoyer ! </div></div>');
+
+
+                $('input[type="radio"]').next('label').click(function(){
+                                               $(this).prev('input').attr('checked',true);});
 
                         $('#flag div').not('.disabled').click(function(){
                             var msg = $('#input-flag').val();
-                            sendFlag(msg);
-                            $('#input-flag').hide();
+                            var status =  $('input[name="option"]:checked').val() || "other";
+                            sendFlag(msg, status);
                             $(this).text('Merci !');
                             $('#flag div').addClass('disabled').unbind('click');
+                            $('#flag').children().not(".disabled").remove();
+
                         });
+
                     });
 
-                        function sendFlag(msg){
+                    $('#flag-ok').click(function(){
+                        $("#flag-div").html('<div id="flag"><div>Merci</div></div>');
+                        okFlag();
+                            $('#flag div').addClass('disabled').unbind('click');
+                    });
+
+
+                        function sendFlag(msg, status){
                                  var flags = window.localStorage.getItem('flags');
                                 if(!flags){flags=[];}
                                 else{flags = JSON.parse(flags)}
-                                flags.push({'id' : id, 'date' : date, 'msg' : msg});
+                                flags.push({'id' : id, 'date' : date, 'msg' : msg, 'status' : status});
                                  window.localStorage.setItem('flags', JSON.stringify(flags));
-                                                                 };
-
+                                 }
+            
+                        function okFlag(){
+                                 var flags = window.localStorage.getItem('flags');
+                                if(!flags){flags=[];}
+                                else{flags = JSON.parse(flags)}
+                                flags.push({'id' : id, 'date' : date, 'status' : 'ok'});
+                                 window.localStorage.setItem('flags', JSON.stringify(flags));
+                                     
             
 
             // Viewcount Update
@@ -276,6 +301,19 @@ Une erreur, une coquille, un manque de clarté ? <br>
             $('#mailto').not('.disabled').click(function (){requestSolution()});
             
 
+
+            // Modular !
+            $(".detail").each(function(){
+                $(this).hide();
+                $(this).before("<span class='ellipsis'><i class='icon-ellipsis-horizontal'></i> <br></span>");
+            });
+    
+            $(".ellipsis").click(function() {
+                $(this).next(".detail").show('fast');
+                $(this).hide();
+            });
+
+            
             
             
             </script>
