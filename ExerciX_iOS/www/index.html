@@ -57,7 +57,7 @@
                                         "data"       : {"viewcounts" : viewcount, "flags" : flags, "requests" : requests},
                                         "OS"         : OS,
                                         "lastupdate" : date,
-                                        "appversion" : "1.3"} ),
+                                        "appversion" : "1.4"} ),
                    type: "POST", 
                    contentType: "application/json"});
             
@@ -88,7 +88,7 @@
             
             //////////////////////////////////// OPEN INDEX ///////////////////////////////////////////////////
             
-            
+            var cat = {"espaces normes et topologie":"Espaces normés et Topologie","fonctions d'une variable reelle":"Fonctions d'une variable réelle","suites reelles ou complexes":"Suites réelles ou complexes","integration sur un intervalle quelconque":"Intégration sur un intervalle quelconque","integrales a parametre":"Intégrales à paramètre","series numeriques":"Séries numériques","series de fonctions":"Séries de fonctions","series entieres":"Séries entières","series de fourier":"Séries de Fourier","equations differentielles":"Equations différentielles","fonctions de plusieurs variables reelles":"Fonctions de plusieurs variables réelles","structure  arithmetique  complexes":"Structure, arithmétique, complexes","polynomes":"Polynômes","espaces vectoriels  matrices  determinants":"Espaces vectoriels, matrices, déterminants","reduction":"Réduction","espace prehilbertiens  espaces euclidiens":"Espace préhilbertiens, espaces euclidiens","geometrie du plan et de l'espace":"Géométrie du plan et de l'espace","courbes et surfaces":"Courbes et surfaces"};
                 
                 
                 
@@ -103,32 +103,32 @@
                                   $('input').typeahead([
                                                         {
                                                         name: 'algebre',
-                                                        local: ["Structure, arithmétique, complexes",
-                                                                "Polynômes",
-                                                                "Espaces vectoriels, matrices, déterminants",
-                                                                "Réduction",
-                                                                "Espace préhilbertiens, espaces euclidiens"],
+                                                        local: ["structure  arithmetique  complexes",
+                                                                "polynomes",
+                                                                "espaces vectoriels  matrices  determinants",
+                                                                "reduction",
+                                                                "espace prehilbertiens  espaces euclidiens"],
                                                         header: '<div class="search-cat">Algèbre</div>'
                                                         },
                                                         {
                                                         name: 'analyse',
-                                                        local: ["Espaces normés et Topologie",
-                                                                "Fonctions d'une variable réelle",
-                                                                "Suites réelles ou complexes",
-                                                                "Intégration sur un intervalle quelconque",
-                                                                "Intégrales à paramètre",
-                                                                "Séries numériques",
-                                                                "Séries de fonctions",
-                                                                "Séries entières",
-                                                                "Séries de Fourier",
-                                                                "Equations différentielles",
-                                                                "Fonctions de plusieurs variables réelles"],
+                                                        local: ["espaces normes et topologie",
+                                                                "fonctions d'une variable reelle",
+                                                                "suites reelles ou complexes",
+                                                                "integration sur un intervalle quelconque",
+                                                                "integrales a parametre",
+                                                                "series numeriques",
+                                                                "series de fonctions",
+                                                                "series entiares",
+                                                                "series de fourier",
+                                                                "equations differentielles",
+                                                                "fonctions de plusieurs variables reelles"],
                                                         header: '<div class="search-cat">Analyse</div>'
                                                         },
                                                         {
                                                         name: 'geometrie',
-                                                        local: ["Géométrie du plan et de l'espace",
-                                                                "Courbes et surfaces"],
+                                                        local: ["geometrie du plan et de l'espace",
+                                                                "courbes et surfaces"],
                                                         header: '<div class="search-cat">Géométrie</div>'
                                                         }
                                                         ]);
@@ -141,9 +141,13 @@
                                   
                                   // Search Results handler
                                   $('input#search').keyup(function(){
-                                                          
+                                                          var text;
+                                                          $('.tt-suggestion p').each(function(){
+                                                          text = $(this).html();
+                                                            $(this).html(cat[text]);
+                                                          });
                                                           $('.tt-suggestion').click(function(){
-                                                                                    openChapter($(this).text())});
+                                                                                    openChapter($(this).text()) });
                                                           var chapter = $('input#search').val();
                                                           if (event.which == 13) {
                                                           if(jQuery.inArray(chapter,cats[0][1]) + jQuery.inArray(chapter,cats[1][1]) + jQuery.inArray(chapter,cats[2][1]) > -3){

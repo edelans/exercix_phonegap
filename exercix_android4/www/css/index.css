@@ -430,7 +430,7 @@ input#search::-webkit-input-placeholder,
   color: black !important;
   font-size: 15px;
   display: block;
-  background: #ffac8b;
+  background: #ffd0be;
   padding: 5px;
   margin: 10px auto;
 }
@@ -438,7 +438,7 @@ input#search::-webkit-input-placeholder,
 #flag-ok {
   display: inline-block;
   padding: 10px;
-  background: #ff6325;
+  background: #ff753f;
   color: white !important;
   text-align: center;
 }

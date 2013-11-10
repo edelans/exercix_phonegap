@@ -188,14 +188,14 @@ i{font-family: LMI; font-style: normal;}
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-input#search, .tt-hint{ /* La barre de recherche, et la barre de suggestion située en dessous.*/
+input#search{ /* La barre de recherche, et la barre de suggestion située en dessous.*/
 	width: 100% ;
 	padding: 10px 20px;
 	border: 0 none;
 	font-size: 30px;
 	-webkit-transition: all 0.5s;	
     outline: 0 none;
-    background: @orange;
+    background: @orange !important;
     border-radius: 0;
     opacity: 1;
 	&:hover, &:focus{color : white;}
@@ -203,6 +203,10 @@ input#search, .tt-hint{ /* La barre de recherche, et la barre de suggestion situ
 		color: rgba(255,255,255,0.4);
 		text-align: center;
 	}
+}
+
+.tt-hint{
+	display: none;
 }
 
 input#search:focus{
@@ -314,6 +318,7 @@ input#search:focus{
 #question-solution-container{
 	display: table;
 	font-size: 18px;
+	width : 100%;
 }
 
 #question{
@@ -398,23 +403,24 @@ input#search:focus{
 
 #flag-div{
 	text-align: center;
-	color: black !important;
+	color: darken(@orange, 27%) !important;
 	font-size: 15px;
 	display: block;
-	background : lighten(@orange, 30%);
+	background : lighten(@orange, 50%);
 	padding: 5px;
 	margin: 10px auto;
+	max-width: 330px
 }
 
 #show-flag, #flag-ok{
 		display: inline-block;
 		padding: 10px;
-		background: lighten(@orange,10%);
-		color: white !important;
+		background: lighten(@orange, 46%);
+		color: lighten(@orange, 17%) !important;
 		text-align: center;
 }
 
-#show-solution, #mailto, #show-hint, #flag{
+#show-solution, #mailto, #show-hint{
 	width: 100%;
 	text-align: center;
 	display: block;
@@ -426,6 +432,7 @@ input#search:focus{
 		text-align: center;
 		}
 }
+
 
 
 #mailto{
@@ -444,13 +451,29 @@ input#search:focus{
 	}
 
 #flag{
+	width: 100%;
+	text-align: center;
+	display: block;
+	padding-top: 10px; 
+	div{ // bouton envoyer
+		display: inline-block;
+		padding: 10px;
+		background: @orange;
+		color: white !important;
+		text-align: center;
+		}
     .disabled{background: #eee; color: black !important;}
 	#input-flag{
 		border-radius: 0;
-		width: 80%;
-	min-height: 200px;
-	border: 1px solid #f44400;
+		max-width: 300px;
+		width: 90%;
 	font-size: 20px;
+	background: rgba(255,255,255,0.7);
+	padding: 10px;
+	border: 0 none;
+	margin-top: 10px;
+	height: 200px;
+	resize : none;
 	}
 			input[type='radio']{
 			display: inline;
@@ -461,7 +484,8 @@ input#search:focus{
 			padding: 0;
 			margin: 0;
 			& + label{
-				width : 99%;
+				max-width : 300px;
+				width : 90%;
 				padding: 10px;
 				display: inline-block;
 				font-size: 15px;
@@ -715,6 +739,7 @@ padding: 20px 10px;
 // Single-exo
 #question-solution-container{
 	display: block;
+	max-width: 100%
 }
 #question, #solution{
 	display: block;

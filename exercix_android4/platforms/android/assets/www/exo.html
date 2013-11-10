@@ -248,9 +248,14 @@
                     $('#show-flag').click(function(){
                         $('#flag-div').html('<div id="flag"><input id="fil1" type="radio" name="option" required value="formulation" ><label for="fil1">Il y a une faute de langue (typo/orthographe)</label><input id="fil2" type="radio" name="option" required value="detailsneeded" ><label for="fil2">La correction est trop succinte</label><input id="fil3" type="radio" name="option" required value="other" ><label for="fil3">Autre</label><textarea id="input-flag" placeholder="Expliquez nous ce qui ne va pas."></textarea><br><div>Envoyer ! </div></div>');
 
-
+                $('#flag textarea, #flag div').hide();
                 $('input[type="radio"]').next('label').click(function(){
                                                $(this).prev('input').attr('checked',true);});
+
+                $('input[type="radio"], label').click(function(){
+                                   $('#flag textarea, #flag div').show();
+                                             });
+
 
                         $('#flag div').not('.disabled').click(function(){
                             var msg = $('#input-flag').val();

@@ -16,11 +16,12 @@
         },
         escapeRegExChars: function(str) {
             str = str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
- var from = "ãàáäâẽèéëêìíïîòóöôùúüûç";
- var to   = "aaaaaeeeeeiiiioooouuuuc";
- for (var i=0, l=from.length ; i<l ; i++) {
- str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
- }
+            str = str.replace(/ã|à|á|ä|â/g, "a");
+            str = str.replace(/é/g, "e");
+            str = str.replace(/ì|í|ï|î/g, "i");
+            str = str.replace(/õ|ò|ó|ö|ô/g, "o");
+            str = str.replace(/ù|ú|ü|û/g, "u");
+
         },
         isString: function(obj) {
             return typeof obj === "string";
@@ -482,11 +483,13 @@
             },
             _getLocalSuggestions: function(terms) {
                 var that = this, firstChars = [], lists = [], shortestList, suggestions = [];
+
                 utils.each(terms, function(i, term) {
                     var firstChar = term.charAt(0);
                     !~utils.indexOf(firstChars, firstChar) && firstChars.push(firstChar);
                 });
                 utils.each(firstChars, function(i, firstChar) {
+
                     var list = that.adjacencyList[firstChar];
                     if (!list) {
                         return false;
@@ -501,6 +504,7 @@
                 }
                 utils.each(shortestList, function(i, id) {
                     var item = that.itemHash[id], isCandidate, isMatch;
+                    
                     isCandidate = utils.every(lists, function(list) {
                         return ~utils.indexOf(list, id);
                     });
@@ -634,7 +638,7 @@
                 this.query = query;
             },
             getInputValue: function() {
-                return this.$input.val();
+                return this.$input.val().replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&").replace(/ã|à|á|ä|â/g, "a").replace(/é/g, "e").replace(/ì|í|ï|î/g, "i").replace(/õ|ò|ó|ö|ô/g, "o").replace(/ù|ú|ü|û/g, "u");;
             },
             setInputValue: function(value, silent) {
                 this.$input.val(value);
